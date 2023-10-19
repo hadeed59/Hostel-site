@@ -17,10 +17,7 @@ import { useSelector } from "react-redux";
 const HomePage = () => {
   const hostelRoomsData = useSelector((state) => state.Rooms.rooms);
   useEffect(() => {
-    const getHostelsData = async () => {
-      await getHostelRooms();
-    };
-    getHostelsData();
+    getHostelRooms();
   }, []);
   return (
     <div>

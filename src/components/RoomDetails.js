@@ -14,8 +14,8 @@ const RoomDetails = () => {
   const roomId = parseInt(params.id);
 
   useEffect(() => {
-    const getSingleRoomData = async (id) => {
-      await getSingleRoom(id);
+    const getSingleRoomData = (id) => {
+      getSingleRoom(id);
     };
     getSingleRoomData(roomId);
   }, [roomId]);

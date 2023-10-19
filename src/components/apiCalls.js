@@ -6,9 +6,9 @@ import {
   setSingleRoom,
 } from "../redux/slices/hostelRoomsSlice";
 
-export const getHostelRooms = async () => {
+export const getHostelRooms = () => {
   try {
-    const response = await hostelRooms;
+    const response = hostelRooms;
     dispatch(setRooms(response));
   } catch (e) {
     console.log(e);
@@ -17,9 +17,10 @@ export const getHostelRooms = async () => {
 
 export const getSingleRoom = async (id) => {
   try {
-    const response = await hostelRooms.filter((room) => room.id === id);
+    const response = hostelRooms.filter((room) => room.id === id);
     dispatch(setSelectedRoomID(id));
     dispatch(setSingleRoom(response[0]));
+    console.log(response);
   } catch (e) {
     console.log(e);
   }
