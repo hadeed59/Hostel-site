@@ -1,6 +1,6 @@
-# Static Hostel Site -
+# Static Hostel Site 
 
-Back in the days it was practice project for react routin, component structures and UI development with Tailwind CSS.
+Back in the days it was practice project for react routing, component structures and UI development with Tailwind CSS.
 
 ## Quick Start
 
